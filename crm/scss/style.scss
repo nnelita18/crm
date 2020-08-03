@@ -1,0 +1,115 @@
+/*-------------------------------------------------------------------
+  ===== Table of Contents =====
+
+  * Bootstrap functions
+  * Template variables
+  * SCSS Compass Functions
+  * Boostrap Main SCSS
+  * Template mixins
+    + Animation Mixins
+    + Button Mixins
+    + Cards Mixins
+  * Core Styles
+    + Reset Styles
+    + Fonts
+    + Functions
+    + Backgrounds
+    + Sidebar
+    + Navbar
+    + Typography
+    + Footer
+    + Layouts
+    + Utilities
+    + Demo styles
+  * Components
+    + Buttons
+    + Cards
+    + Forms
+    + Icons
+    + Tables
+  * Layout
+    + Vertical wrapper
+    + Sidebar
+    + Navbar
+    + Layouts
+/*-------------------------------------------------------------------*/
+
+
+/* === Import Bootstrap functions and variables === */
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+/*-------------------------------------------------------------------*/
+/* === Import template variables === */
+@import "variables";
+
+/*-------------------------------------------------------------------*/
+/* === SCSS Compass Functions === */
+@import "../node_modules/compass-mixins/lib/compass";
+@import "../node_modules/compass-mixins/lib/animate";
+
+/*-------------------------------------------------------------------*/
+/* === Boostrap Main SCSS === */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/*-------------------------------------------------------------------*/
+/* === Template mixins === */
+@import "mixins/misc";
+@import "mixins/animation";
+@import "mixins/buttons";
+@import "mixins/cards";
+/*-------------------------------------------------------------------*/
+/* === Core Styles === */
+@import "reset";
+@import "fonts";
+@import "functions";
+@import "background";
+@import "typography";
+@import "misc";
+@import "preview";
+@import "partials/footer";
+@import "utilities";
+@import "animations";
+@import "demo";
+
+/*-------------------------------------------------------------------*/
+/* === Components === */
+@import "components/buttons";
+@import "components/cards";
+@import "components/checkbox-radio";
+@import "components/forms";
+@import "components/badges";
+@import "components/icons";
+@import "components/lists";
+@import "components/tables";
+@import "components/dropdown";
+@import "components/tabs";
+
+/*-------------------------------------------------------------------*/
+/* === Plugin overrides === */
+@import "components/plugin-overrides/pws-tabs";
+@import "components/plugin-overrides/progressbar-js";
+
+/* === Landing screens === */
+@import "landing-screens/auth";
+
+@import "vertical-wrapper";
+@import "partials/sidebar";
+@import "partials/navbar";
+@import "partials/layouts";
+
+@import "pages/statistics";
+@import "pages/admin/metas/tabs";
+@import "pages/admin/metas/areas";
+@import "pages/admin/metas/list";
+@import "pages/admin/metas/modal-list";
+
+@import "pages/admin/campaigns/crm_campaigns";
+
+@import "pages/admin/statistics/char-container";
+
+@import "pages/prospects/prospects";
+@import "pages/prospects/add-pros";
+
+@import "pages/telemark/modals";
+@import "pages/telemark/calendar";
